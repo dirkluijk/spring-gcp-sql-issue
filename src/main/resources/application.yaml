@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    gcp:
+      project-id: foo-bar
+      credentials:
+        encoded-key: <<put-your-encoded-key-here>>
+      sql:
+        enabled: true
+        database-name: test
+        instance-connection-name: foo-bar:europe-west4:some-database
+        enable-iam-auth: true
+  datasource:
+    username: some-user
