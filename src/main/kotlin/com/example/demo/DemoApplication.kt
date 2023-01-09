@@ -1,9 +1,11 @@
 package com.example.demo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
+@ConfigurationPropertiesScan(basePackages = ["com.example.demo"])
 class DemoApplication
 
 fun main(args: Array<String>) {
